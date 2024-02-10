@@ -1,0 +1,164 @@
+.Header {
+    background-color: $header-bg;
+
+    height: 91px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+
+    &-container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        margin-bottom: 0;
+    }
+
+    &-logo img {
+        height: 49px;
+    }
+
+    &-menu {
+        margin-right: 50px;
+    }
+
+    &-row {
+        align-items: center;
+        display: flex;
+    }
+
+    &-links {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    &-link {
+        color: $header-text;
+        font-family: $regular-font;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.4px;
+        margin-left: 35px;
+        margin-right: 35px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $header-text-hover;
+            transition: all 0.3 ease-in;
+        }
+    }
+
+    &-button {
+        background-color: $header-text-hover;
+        color: $header-bg;
+        font-family: $regular-font;
+        font-size: 14px;
+        font-weight: 700;
+        height: 51px;
+        line-height: 51px;
+        text-align: center;
+        text-decoration: none;
+        width: 260px;
+    }
+
+    &-hamburguer {
+        display: none;
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-menu {
+            margin-right: 20px;
+        }
+
+        &-link {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-logo img {
+            height: auto;
+            width: 150px;
+        }
+
+        &-button {
+            font-size: 14px;
+            letter-spacing: 0;
+            padding: 0;
+            width: 142px;
+        }
+
+        &-menu {
+            margin-right: 0;
+        }
+
+        &-link {
+            margin-left: 10x;
+            margin-right: 10px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &-button {
+            display: none;
+        }
+
+        &-container {
+            height: 52px;
+        }
+
+        &-hamburger {
+            display: block;
+
+            width: 20px;
+        }
+
+        &-row {
+            height: 0;
+            margin-right: 0;
+            position: absolute;
+            right: 0;
+            top: 70px;
+            transition: heigth 0.3 ease;
+            width: 100vw;
+            z-index: 10;
+        }
+
+        &-menu {
+            background-color: $header-bg;
+            height: 0;
+            overflow: hidden;
+        }
+
+        &-links {
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        &-hamburgerCheck:checked ~ &-row,
+        &-hamburgerCheck:checked ~ &-row > &-menu {
+            height: 100vh;
+            transition: height 0.3s ease;
+            width: 100%;
+        }
+
+        &-item {
+            margin-bottom: 10px;
+        }
+
+        &-link {
+            font-size: 14px;
+        }
+    }
+}
