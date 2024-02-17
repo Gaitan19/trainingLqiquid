@@ -27,10 +27,10 @@ const HeroCard = ({
         <p className="HeroCard-technology">{technology}</p>
         <span className="HeroCard-subtitle">About me</span>
         <p className="HeroCard-text">{text}</p>
-        <button className="HeroCard-button">Engage</button>
-        <span className="HeroCard-subtitle">Skills:</span>
-        <ul className="HeroCard-skills">{renderSkills()}</ul>
       </div>
+      <button className="HeroCard-button">Engage</button>
+      <span className="HeroCard-subtitle">Skills:</span>
+      <ul className="HeroCard-skills">{renderSkills()}</ul>
     </div>
   );
 };

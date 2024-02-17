@@ -73,4 +73,52 @@
         height: 142px;
         width: auto;
     }
+
+    @include media-breakpoint-down(lg) {
+        height: 100%;
+        &-container {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
+            padding: 75px 0;
+        }
+
+        &-description {
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+        }
+
+        &-text {
+            margin-bottom: 40px;
+            text-align: center;
+            width: 100%;
+        }
+
+        &-cards {
+            display: none;
+        }
+
+        &-footer {
+            flex-direction: column-reverse;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-title {
+            font-size: 28px;
+        }
+
+        &-text {
+            font-size: 18px;
+        }
+    }
 }

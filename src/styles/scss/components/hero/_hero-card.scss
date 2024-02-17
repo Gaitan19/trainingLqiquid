@@ -22,6 +22,7 @@
         margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
+        width: 98px;
         img {
             height: auto;
         }
@@ -95,5 +96,9 @@
         &::after {
             content: ",";
         }
+    }
+
+    @include media-breakpoint-down(xl) {
+        width: 380px;
     }
 }
