@@ -22,7 +22,6 @@ const HeroCard = ({
       <div className="HeroCard-image">
         <Image src={logo} alt={altLogo} width={55} height={49} />
       </div>
-
       <div className="HeroCard-information">
         <h3 className="HeroCard-title">{title}</h3>
         <p className="HeroCard-technology">{technology}</p>
@@ -30,7 +29,7 @@ const HeroCard = ({
         <p className="HeroCard-text">{text}</p>
         <button className="HeroCard-button">Engage</button>
         <span className="HeroCard-subtitle">Skills:</span>
-        {renderSkills()}
+        <ul className="HeroCard-skills">{renderSkills()}</ul>
       </div>
     </div>
   );

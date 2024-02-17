@@ -35,13 +35,17 @@ const Hero = ({ title = "", text = "", buttonText = "Get in touch" }) => {
                 {buttonText}
               </Link>
 
-              <Image src={clutchLogo} alt="Clutch" width="auto" height="auto" />
+              <Image
+                className="Hero-clutch"
+                src={clutchLogo}
+                alt="Clutch"
+                width="auto"
+                height="auto"
+              />
             </div>
           </div>
 
-          <div className="Hero-cards">
-            <HeroCard />
-          </div>
+          <div className="Hero-cards">{renderCards()}</div>
         </div>
       </div>
     </section>

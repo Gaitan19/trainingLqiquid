@@ -3,6 +3,15 @@ $white: #fff;
 $black: #000;
 $blue-dark: #1c243e;
 $orange: #f89b27;
+$dark-green: #00071e;
+$blue-byzantine: #1b233b;
+$blue-byzantine-dark: #192139;
+$black-light: #00000029;
+$gray-dark-opaque: #7070701f;
+
+$peacoat: #242a41;
+$blue-grayish: #21283e;
+$grey-light: #ffffff77;
 
 // fonts
 $regular-font: "Open Sans", sans-serif;
@@ -13,3 +22,10 @@ $header-bg: $white;
 $header-text: $blue-dark;
 $header-button: $orange;
 $header-text-hover: $orange;
+
+// hero variables
+$hero-title: $white;
+$hero-text: $white;
+$hero-button: $orange;
+$hero-card-border: $gray-dark-opaque;
+$hero-card-border-button: $grey-light;

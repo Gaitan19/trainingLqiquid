@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "watch-scss": "node-sass --source-map ./src/styles/css --watch ./src/styles/scss -o ./src/styles/css",
     "lint": "next lint"
   },
   "dependencies": {
@@ -18,6 +17,7 @@
     "node-sass": "^9.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "sass": "^1.71.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {

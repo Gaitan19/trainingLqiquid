@@ -1,0 +1,99 @@
+.HeroCard {
+    backdrop-filter: blur(18px);
+    background: transparent conic-gradient(from 53deg at 50% 50%, $blue-byzantine 0%, $blue-byzantine-dark 100%) 0% 0%
+        no-repeat padding-box;
+    border-radius: 10px;
+    box-shadow: 4px 3px 10px $black-light;
+    font-family: $regular-font;
+    height: 500px;
+    min-height: 500px;
+    padding: 21px 43px 40px;
+    width: 400px;
+
+    &-image {
+        align-items: center;
+        backdrop-filter: blur(38px);
+        background: transparent conic-gradient(from 235deg at 50% 50%, $peacoat 0%, $blue-grayish 100%) 0% 0% no-repeat
+            padding-box;
+        border-radius: 50%;
+        display: flex;
+        height: 98px;
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            height: auto;
+        }
+    }
+
+    &-title {
+        color: $hero-title;
+        font-size: 18px;
+    }
+
+    &-text {
+        color: $hero-text;
+        font-size: 12px;
+        font-weight: 300;
+        height: 72px;
+        margin-bottom: 16px;
+        max-width: 310px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &-technology,
+    &-subtitle {
+        color: $hero-text;
+        display: block;
+        font-size: 15px;
+    }
+
+    &-subtitle {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    &-information {
+        align-items: center;
+        border-bottom: 1px solid $hero-card-border;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &-button {
+        background-color: transparent;
+        border: 1px solid $hero-card-border-button;
+        color: $hero-text;
+        display: block;
+        height: 34px;
+        margin: 0 auto 24px;
+        width: 105px;
+    }
+
+    &-skills {
+        color: $hero-text;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        font-weight: 100;
+        list-style: none;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    &-skill {
+        margin-right: 3px;
+        &:last-child::after {
+            content: "";
+        }
+
+        &::after {
+            content: ",";
+        }
+    }
+}
